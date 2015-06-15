@@ -128,3 +128,72 @@ header .fullheight .hgroup p {
 header .fullheight .hgroup p img {
   padding-top: 50px;
 }
+
+header #nav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBhNWM3MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA2MzY0MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0a5c71), color-stop(100%, #063642));
+  background-image: -moz-linear-gradient(top, #0a5c71, #063642);
+  background-image: -webkit-linear-gradient(top, #0a5c71, #063642);
+  background-image: linear-gradient(to bottom, #0a5c71, #063642);
+  width: 100%;
+}
+header #nav:before, header #nav:after {
+  content: '';
+  display: table;
+}
+header #nav:after {
+  clear: both;
+}
+header #nav .navbar .brand {
+  float: left;
+  font-weight: 600;
+  text-align: center;
+  font-family: 200 1.5em/1.5em "Exo 2", "Hevetica Neue", helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  background: #DF4848;
+}
+header #nav .navbar .brand a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5em;
+}
+header #nav .navbar ul li {
+  float: left;
+}
+header #nav .navbar ul li a {
+  color: #FFFFFF;
+  font: 200 1em/1.5em "Exo 2", "Hevetica Neue", helvetica, Arial, sans-serif;
+  font-size: 1em;
+  display: inline-block;
+  padding: 10px 10px 10px 45px;
+  text-decoration: none;
+  -moz-background-size: 35px;
+  -o-background-size: 35px;
+  -webkit-background-size: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 2px;
+}
+header #nav .navbar ul li a.info {
+  background-image: url("../images/icons/info.png");
+}
+header #nav .navbar ul li a.rooms {
+  background-image: url("../images/icons/rooms.png");
+}
+header #nav .navbar ul li a.dining {
+  background-image: url("../images/icons/dining.png");
+}
+header #nav .navbar ul li a.events {
+  background-image: url("../images/icons/events.png");
+}
+header #nav .navbar ul li a.attractions {
+  background-image: url("../images/icons/attractions.png");
+}
+header #nav .navbar ul li a:hover {
+  background-color: #EFC96C;
+  color: #063642;
+}
