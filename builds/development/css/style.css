@@ -92,3 +92,39 @@ body {
   position: relative;
   padding: 20px 0;
 }
+
+header .fullheight {
+  background: url("../images/hotel/splash_hotelphoto.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .fullheight .hgroup {
+  padding: 100px 0;
+}
+header .fullheight .hgroup h1 {
+  color: #FFFFFF;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+header .fullheight .hgroup h2 {
+  display: block;
+  color: #FFFFFF;
+  max-width: 200px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+header .fullheight .hgroup p {
+  text-align: center;
+}
+header .fullheight .hgroup p img {
+  padding-top: 50px;
+}
