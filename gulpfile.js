@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html'),
     concat = require('gulp-concat');
     path = require('path');
-
+    
 var env,
     jsSources,
     sassSources,
@@ -58,6 +58,7 @@ gulp.task('compass', function() {
 //    .pipe(gulp.dest( outputDir + 'css'))
     .pipe(connect.reload())
 });
+
 
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);

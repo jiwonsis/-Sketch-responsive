@@ -60,3 +60,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  font: 200 1em/1.5em "Exo 2", "Hevetica Neue", helvetica, Arial, sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: 200 1.5em/1.5em "Exo 2", "Hevetica Neue", helvetica, Arial, sans-serif;
+  color: #0e83a0;
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
