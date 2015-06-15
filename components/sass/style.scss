@@ -14,20 +14,20 @@
 @import "susy";
 @import "breakpoint";
 
-//Core Partial
-// @import "variables";
-// @import "mixins";
-// @import "base";
-// @import "layout";
+// Core Partial
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
 
-//Import Modules
-// @import "modules/intro";
-// @import "modules/nav";
-// @import "modules/welcome";
-// @import "modules/events";
-// @import "modules/dining";
-// @import "modules/hotelinfo";
-// @import "modules/rooms";
-// @import "modules/attraction";
-// @import "modules/footer";
+// Import Modules
+@import "modules/intro";
+@import "modules/nav";
+@import "modules/welcome";
+@import "modules/events";
+@import "modules/dining";
+@import "modules/hotelinfo";
+@import "modules/rooms";
+@import "modules/attraction";
+@import "modules/footer";
 
