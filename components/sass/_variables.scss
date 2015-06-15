@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:600,200,800,400);
+
+@include border-box-sizing; //uses border box sizing like the old IE
+
+
+//Add Color Palette
+$blue 			: #063642;
+$green			: #45B29D;
+$yellow			: #EFC96C;
+$orange			: #E27A3F;
+$red 			: #DF4848;
+$pink			: #CD0069;
+$purple			: #6C71C4;
+$dark			: #000000;
+$light			: #FFFFFF;
+
+$bacgkround		: $light;
+$typeDefault	: $dark;
+$navBacgkroud	: $blue;
+$navForeground	: $light;
+$navHover		: $yellow;
+$navBrandBg		: $red;
+$headersubBg	: $dark; 
+
+//Font Variables
+$fontfamily : 'Exo 2', 'Hevetica Neue', helvetica, Arial, sans-serif;
+
+$thin			: 200;
+$normal			: 400;
+$bold 			: 600;
+$bolder 		: 800;
+
+$headFont		: $thin 1.5em/1.5em $fontfamily;
+$mainFont		: $thin 1em/1.5em $fontfamily;
+$headColor 		: lingthen($blue, 20);
+ 
+
