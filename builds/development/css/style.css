@@ -95,10 +95,27 @@ body {
   padding: 20px 0;
 }
 
+article {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  article {
+    padding: 40px 0;
+  }
+}
+
 header .fullheight {
   background: url("../images/hotel/splash_hotelphoto.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
+  -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 header .fullheight .hgroup {
@@ -440,4 +457,40 @@ header #nav .navbar ul li a:hover {
   margin-left: 10%;
   line-height: 115%;
   margin-bottom: 5px;
+}
+#hotelinfo #usefulinfo section#arrivalinfo ul {
+  margin: 0;
+}
+#hotelinfo #usefulinfo section#arrivalinfo ul li {
+  list-style: none;
+  border-top: 1px solid #FFFFFF;
+  padding: 15px 0;
+  margin-left: 0;
+}
+#hotelinfo #usefulinfo section#arrivalinfo ul li strong {
+  color: #EFC96C;
+}
+#hotelinfo #usefulinfo section#arrivalinfo ul li:first-child {
+  border-top: none;
+}
+#hotelinfo #greenprogram {
+  background-color: rgba(26, 68, 60, 0.5);
+  margin-top: 20px;
+  border: 1px solid #FFFFFF;
+  padding: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+@media (min-width: 1200px) {
+  #hotelinfo #greenprogram {
+    background-image: url("../images/misc/greenplanet.png");
+    -moz-background-size: 400px;
+    -o-background-size: 400px;
+    -webkit-background-size: 400px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+    padding-right: 300px;
+  }
 }
