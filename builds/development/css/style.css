@@ -494,3 +494,100 @@ header #nav .navbar ul li a:hover {
     padding-right: 300px;
   }
 }
+
+#rooms header {
+  margin-bottom: 20px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rooms header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 960px) {
+  #rooms header {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 9.16667%;
+    padding-right: 9.16667%;
+  }
+  #rooms header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+#rooms .room {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 9.16667%;
+  padding-right: 9.16667%;
+  padding: 200px 0;
+}
+#rooms .room:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  #rooms .room {
+    padding-left: 59.16667%;
+    padding-right: 9.16667%;
+  }
+}
+#rooms .room .content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+#rooms .room .content h1 {
+  color: #DF4848;
+}
+#rooms #piccadilly {
+  background: url("../images/hotel/rooms_piccadilly.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#rooms #cambridge {
+  background: url("../images/hotel/rooms_cambridge.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#rooms #westminster {
+  background: url("../images/hotel/rooms_westminster.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#rooms #oxford {
+  background: url("../images/hotel/rooms_oxford.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#rooms #victoria {
+  background: url("../images/hotel/rooms_victoria.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#rooms #manchester {
+  background: url("../images/hotel/rooms_manchester.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
