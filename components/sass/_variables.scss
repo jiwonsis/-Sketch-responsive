@@ -2,6 +2,18 @@
 
 @include border-box-sizing; //uses border box sizing like the old IE
 
+$susy : (
+	columns: 12,
+	container: 60em,
+	gutters: 1/4,
+	gutter-position: inside
+);
+
+$narrow : 400px;
+$small : 650px;
+$medium : 960px;
+$wide : 1200px;
+
 
 //Add Color Palette
 $blue 			: #063642;

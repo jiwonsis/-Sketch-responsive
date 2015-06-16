@@ -2,6 +2,8 @@ body {
 	font: $mainFont;
 	background: $bacgkround;
 	color: $typeDefault;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
 }
 
 #{headings()} {
