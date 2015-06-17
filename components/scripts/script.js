@@ -1,5 +1,7 @@
 $(function() {
     var topOffset = 43;
+
+    //window Height
     var wheight = $(window).height(); // get height of window;
     $('.fullheight').css('height', wheight);
 
@@ -8,7 +10,7 @@ $(function() {
         $('.fullheight').css('height', wheight);
     }); // on resize
 
-
+    // Animated scrolling
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -23,7 +25,7 @@ $(function() {
         } // location hostname
     }); // onClick
 
-
+    // hightlight navigation
     $(window).scroll(function(){
     	var windowPos = $(window).scrollTop() + topOffset;
     	$('nav li a').removeClass('active');
@@ -65,10 +67,101 @@ $(function() {
         }
     });
 
+    // pin navigation
     var pin = new ScrollScene({
         triggerElement: '#nav',
     }).setPin('#nav').addTo(controller);
 
+    // room animation
+    var roomOrigin = {
+    	bottom: -700,
+    	opacity: 0,
+    	scale: 0
+    }
+
+    var roomDest = {
+    	repeat: 1,
+    	yoyo: true,
+    	bottom: 0,
+    	opacity: 1, 
+    	scale: 1,
+    	ease: Back.easeOut
+    }
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#piccadilly .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#piccadilly',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#piccadilly')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#cambridge .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#cambridge',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#cambridge')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#westminster .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#westminster',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#westminster')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#oxford .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#oxford',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#oxford')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#victoria .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#victoria',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#victoria')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+    var roomtween = TweenMax.staggerFromTo(
+    	'#manchester .content',
+    	1, roomOrigin, roomDest);
+
+    var pin = new ScrollScene({
+    	triggerElement: '#manchester',
+    	offset: -topOffset,
+    	duration: 500  	
+    }).setPin('#manchester')
+    	.setTween(roomtween)
+    	.addTo(controller);
+
+
+    // attactions animation 
     var attractionstween = TweenMax.staggerFromTo(
         '#attractions article', 1, {
             opacity: 0,
