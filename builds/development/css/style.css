@@ -94,19 +94,18 @@ body {
   position: relative;
   padding: 20px 0;
 }
-
-article {
+.scene article {
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
-article:after {
+.scene article:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 1200px) {
-  article {
+  .scene {
     padding: 40px 0;
   }
 }
@@ -117,6 +116,12 @@ header .fullheight {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 header .fullheight .hgroup {
   padding: 100px 0;
@@ -526,7 +531,13 @@ header #nav .navbar ul li a:hover {
   margin-right: auto;
   padding-left: 9.16667%;
   padding-right: 9.16667%;
-  padding: 200px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 100px 0;
 }
 #rooms .room:after {
   content: " ";
