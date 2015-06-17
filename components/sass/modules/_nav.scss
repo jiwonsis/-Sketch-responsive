@@ -2,6 +2,7 @@ header #nav {
     @include clearfix;
     @include background-image( linear-gradient( top, lighten( $navBacgkroud, 10), $navBacgkroud));
     width: 100%;
+    z-index: 100;
     .navbar {
         @include container;
         .brand {
